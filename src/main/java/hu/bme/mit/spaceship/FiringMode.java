@@ -7,4 +7,6 @@ package hu.bme.mit.spaceship;
 // bwoah brach_A  "hehe branch B is here"
 public enum FiringMode {
   SINGLE, ALL
+// br-D is here 
+
 }
