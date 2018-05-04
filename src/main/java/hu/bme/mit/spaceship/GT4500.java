@@ -77,16 +77,16 @@ private boolean singelFire()
 
     boolean firingSuccess = false;
 
-    switch (firingMode) {
-      case SINGLE:
+    if (firingMode == FiringMode.SINGLE) {
+     
         firingSuccess = singelFire();
-        break;
+    }
 
-      case ALL:
+      else if(firingMode == FiringMode.ALL){
         // try to fire both of the torpedo stores
         //TODO implement feature
-		firingSuccess = true;
-        break;
+	  	firingSuccess = true;
+ 
     }
 
     return firingSuccess;
